@@ -30,7 +30,7 @@ const CARDS_LIST = [
 const App = React.memo(() => {
   return (
     <div className="app">
-      <p className="title">BemSass</p>
+      <p className="title">BEM SASS</p>
       <div className="cards-list">
         {CARDS_LIST.map(({id, name, description, avatarSrc, theme}) => (
           <div className="card" key={id}>

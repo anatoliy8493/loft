@@ -29,7 +29,7 @@ const CARDS_LIST = [
 
 const App = React.memo(() => (
   <S.App>
-    <S.Title>StyledComponents</S.Title>
+    <S.Title>Styled Components</S.Title>
     <S.CardsList>
       {CARDS_LIST.map(({id, name, description, avatarSrc, theme}) => (
         <S.Card key={id}>

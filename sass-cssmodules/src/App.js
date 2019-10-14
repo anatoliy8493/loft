@@ -30,7 +30,7 @@ const CARDS_LIST = [
 const App = React.memo(() => {
   return (
     <div className={styles.app}>
-      <p className={styles.title}>SASS Css Modules</p>
+      <p className={styles.title}>SASS CSSModules</p>
       <div className={styles.cardsList}>
         {CARDS_LIST.map(({id, name, description, avatarSrc, theme}) => (
           <div className={styles.card} key={id}>
