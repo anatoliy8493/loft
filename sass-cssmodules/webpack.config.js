@@ -17,7 +17,25 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
-      }
+      },
+      {
+        test: /\.(scss|sass)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: [
+                'src/styles/_variables.sass',
+                'src/styles/_colors.sass',
+                'src/styles/_mixins.sass',
+              ],
+            },
+          },
+        ],
+      },
     ]
   },
   plugins: [

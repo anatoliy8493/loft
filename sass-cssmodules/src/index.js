@@ -1,9 +1,8 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 import App from './App';
 
-const BemSass = React.memo(() => (
+ReactDOM.render((
   <App />
-))
-
-export default BemSass;
+), document.getElementById('root'));

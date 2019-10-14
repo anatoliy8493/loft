@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 
-import styles from './Button.module.sass';
+import styles from './Button.sass';
 
 const Button = React.memo(({children, theme, size, onClick, fullWidth, rounded = false, ...rest}) => {
   // BS
