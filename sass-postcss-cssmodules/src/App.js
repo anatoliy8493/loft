@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './App.module.sass';
+import styles from './style.sass';
 import {Button} from './components';
 
 const CARDS_LIST = [
@@ -30,7 +30,7 @@ const CARDS_LIST = [
 const App = React.memo(() => {
   return (
     <div className={styles.app}>
-      <p className={styles.title}>SassPostCssCssModules</p>
+      <p className={styles.title}>SASS PostCSS CSSModules</p>
       <div className={styles.cardsList}>
         {CARDS_LIST.map(({id, name, description, avatarSrc, theme}) => (
           <div className={styles.card} key={id}>

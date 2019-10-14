@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './App.sass';
+import styles from './style.sass';
 import {Button} from './components';
 
 const CARDS_LIST = [
