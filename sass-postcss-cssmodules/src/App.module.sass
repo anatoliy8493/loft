@@ -1,0 +1,35 @@
+.app
+  padding: 32px
+  
+.cardsList
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 16px
+
+  +media-768
+    grid-template-columns: 1fr 1fr
+    grid-gap: 24px
+
+  +media-1024
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 32px
+
+.card
+  +paper
+  padding: 24px 16px
+
+.cardAvatar
+  +round(40px)
+  margin-bottom: 16px
+
+.cardName
+  +font(16px, 18px, 700)
+  margin-bottom: 24px
+
+.cardDescription
+  +font(14px, 16px)
+  margin-bottom: 16px
+
+.title
+  font-weight: bold
+  margin-bottom: 8px

@@ -1,0 +1,47 @@
+=wh($w, $h: null)
+  @if $h == null
+    $h : $w
+  width: $w
+  height: $h
+
+=round($size: 32px)
+  +wh($size)
+  border-radius: 50%
+  overflow: hidden
+
+=font($size, $line-height, $weight: null, $style: null)
+  font-size: $size
+  line-height: $line-height
+  font-weight: $weight
+  font-style: $style
+
+=media-768
+  @media only screen and (min-width: 768px)
+    @content
+
+=media-1024
+  @media only screen and (min-width: 1024px)
+    @content
+
+=reset-button
+  border: none
+  margin: 0
+  padding: 0
+  width: auto
+  overflow: visible
+  background: transparent
+  color: inherit
+  font: inherit
+  line-height: normal
+  font-smoothing: inherit
+  appearance: none
+
+=paper
+  border-radius: 4px
+  overflow: hidden
+  background-color: $white
+  box-shadow: 0 0 4px rgba(0, 0, 0, .32)
+  transition: box-shadow $animation-duration
+
+  &:hover
+    box-shadow: 0 0 16px rgba(0, 0, 0, .4)
